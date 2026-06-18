@@ -117,9 +117,9 @@ If you found this project helpful, please consider giving this repository a **�
 
 ### Connect With Me
 
-- 💼 LinkedIn: Add Your LinkedIn Profile Here
-- 📧 Email: Add Your Email Here
-- 🐙 GitHub: Add Your GitHub Profile Here
+- 💼 LinkedIn: www.linkedin.com/in/ankit-maurya-172b1b307
+- 📧 Email: ankitmaurya1777@gmail.com
+- 🐙 GitHub: https://github.com/ankitmaurya1777
 
 ---
 
