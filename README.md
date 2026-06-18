@@ -1,42 +1,128 @@
-# 🛡️ Cybersecurity Incidents in India: SQL Analysis
+# 🛡️ Cyber Crime Data Analysis using SQL
 
 ## 📌 Project Overview
-This project involves a deep-dive data analysis of reported cybersecurity incidents across various cities and sectors in India. Using standard SQL, this repository answers complex business and analytical questions to uncover trends in financial losses, prevalent cyber threats (e.g., Phishing, Ransomware, Data Breaches), and regional vulnerability. 
 
-This project serves as a demonstration of **advanced SQL querying techniques** for data manipulation and analytical reporting.
+This project analyzes cybersecurity incidents in India using SQL. The dataset contains information about cyber attacks, financial losses, affected cities, incident types, and targeted sectors. The goal is to uncover trends, identify high-risk areas, and generate actionable insights through SQL-based data analysis.
 
-## 🗄️ Dataset Description
-The analysis is based on the `cybersecurity_cases_india_combined.csv` dataset. The table schema includes the following key columns:
-* `Year`: The year the incident occurred.
-* `Day`: The day of the month.
-* `Amount_Lost_INR`: The financial loss incurred due to the incident (in Indian Rupees).
-* `Incident_Type`: The nature of the cyberattack (e.g., Phishing, Ransomware, Malware Attacks, Data Breach).
-* `City`: The Indian city where the incident was reported.
-* `Category`: The targeted sector (e.g., Corporate, Educational, Health, Government).
+---
 
-## 🛠️ SQL Techniques Demonstrated
-This project heavily utilizes intermediate to advanced SQL features, including:
-- **Data Aggregation & Grouping:** `SUM()`, `AVG()`, `COUNT()`, `MAX()`, `GROUP BY`, `HAVING`
-- **Conditional Logic:** `CASE WHEN` statements for risk bucketing and targeted aggregations.
-- **Common Table Expressions (CTEs):** Breaking down complex queries (e.g., Year-over-Year comparisons, Theoretical Matrix generation).
-- **Window Functions:** - `RANK()` and `DENSE_RANK()` for top N analyses per partition.
-  - `LAG()` for comparing chronological data points.
-  - `SUM() OVER()` for calculating cumulative running totals and percentage contributions.
-- **Advanced Joins:** `INNER JOIN`, `LEFT JOIN`, `CROSS JOIN`, and self-joins for complex relational analysis.
-- **Subqueries:** Utilizing nested queries in `SELECT` and `WHERE` clauses.
+## 📂 Dataset Information
 
-## 📊 Key Analytical Insights Explored
-The SQL script (`queries.sql`) answers 25 targeted questions, including but not limited to:
-1. Identifying the specific incident type causing the highest overall financial damage.
-2. Categorizing incidents into 'High', 'Medium', and 'Low' loss buckets.
-3. Calculating the running cumulative total of financial losses for specific cities over time.
-4. Comparing the financial loss of consecutive incidents within the same sector to identify patterns.
-5. Determining the percentage contribution of individual cyberattacks to the total yearly loss.
-6. Generating Year-over-Year (YoY) loss comparisons for different cities using joined CTEs.
-7. Finding "safe zones" by cross-joining distinct cities and threats to find combinations with zero recorded cases.
+The dataset contains cybersecurity incident records with details such as:
 
-## 🚀 How to Run the Project
-1. **Database Setup:** * Create a new database in your SQL environment (e.g., MySQL, PostgreSQL).
-   ```sql
-   CREATE DATABASE cyber_security;
-   USE cyber_security;
+- Year of Incident
+- Day of Occurrence
+- Amount Lost (INR)
+- Incident Type
+- City
+- Category
+
+---
+
+## 🛠️ Tools & Technologies
+
+- SQL (MySQL)
+- Data Analysis
+- Aggregate Functions
+- Group By & Order By
+- CASE Statements
+- Data Filtering & Sorting
+
+---
+
+## 📊 Analysis Performed
+
+### 🔹 Basic Analysis
+- Retrieve all records
+- Filter incidents by city
+- Identify unique incident types
+- Find highest financial losses
+
+### 🔹 Intermediate Analysis
+- Total incidents by city
+- Average loss by category
+- Year-wise attack analysis
+- Incident type comparison
+
+### 🔹 Advanced Analysis
+- Financial loss categorization
+- High-risk city identification
+- Cybercrime trend analysis
+- Top attack vectors by financial impact
+
+---
+
+## 📈 Key Insights
+
+### 💰 Financial Impact
+- Total financial loss exceeded **₹277 Million**.
+- Average loss per incident was approximately **₹231,000**.
+
+### 🎯 Most Common Cyber Threats
+- Ransomware
+- Phishing
+- Online Fraud
+- Data Breach
+- Hacking
+
+### 🏙️ Cities with Highest Incident Counts
+- Mumbai
+- Delhi
+- Chennai
+- Bangalore
+- Lucknow
+
+### 🏢 Most Targeted Categories
+- Social Media
+- Corporate
+- Personal
+- Government
+- Financial
+
+### 🚨 Highest Financial Damage
+Ransomware generated the highest overall financial losses among all cyber attack categories.
+
+---
+
+## 🎯 Business Value
+
+This analysis helps organizations:
+
+- Identify major cyber threats.
+- Understand financial risks associated with cyber attacks.
+- Detect vulnerable sectors and locations.
+- Support cybersecurity risk management.
+- Improve incident response strategies.
+
+---
+
+## 🚀 Conclusion
+
+This project demonstrates how SQL can be used to analyze cybersecurity datasets and extract meaningful insights. The analysis highlights key cyber threats, financial impacts, and geographic patterns, helping organizations make informed security decisions.
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving this repository a **⭐ Star**. Your support encourages me to create and share more Data Analytics and Data Science projects.
+
+---
+
+## 👨‍💻 Author
+
+**Ankit Maurya**
+
+🎓 Bachelor of Technology (B.Tech) in Computer Science & Engineering  
+🏫 Guru Gobind Singh University (2022 – 2026)
+
+### Connect With Me
+
+- 💼 LinkedIn: Add Your LinkedIn Profile Here
+- 📧 Email: Add Your Email Here
+- 🐙 GitHub: Add Your GitHub Profile Here
+
+---
+
+### 🌟 Thank You for Visiting!
+
+If you like this project, don't forget to **⭐ Star the Repository** and share your feedback.
